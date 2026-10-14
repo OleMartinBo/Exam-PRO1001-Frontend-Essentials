@@ -1,0 +1,15 @@
+/*Colours global scope*/
+:root {
+    /*Colours BTNs*/
+  --green-hover-color: #008F51; 
+  --green-default-color: #28BD6D; 
+  --red-hover-color: #A60F00; 
+  --red-default-color: #CB1D0B; 
+
+  /*Colours text and interface*/
+   --dark-color: #49484B; 
+   --grey-color: #0B0A08; 
+   --white-color: #FFFFFF; 
+   --cream-color: #F7F2DE; 
+   --sky-color: #E1EAF0; 
+}
