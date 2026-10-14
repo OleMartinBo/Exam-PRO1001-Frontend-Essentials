@@ -13,3 +13,10 @@
    --cream-color: #F7F2DE; 
    --sky-color: #E1EAF0; 
 }
+
+/*Body*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
