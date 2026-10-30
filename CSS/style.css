@@ -1,4 +1,4 @@
-/*Colours global scope*/
+/*Colours and text global scope*/
 :root {
     /*Colours BTNs*/
   --green-hover-color: #008F51; 
@@ -12,6 +12,23 @@
    --white-color: #FFFFFF; 
    --cream-color: #F7F2DE; 
    --sky-color: #E1EAF0; 
+
+    /*Text styles desktop */
+    --header: 36px;
+    --sub-header: 20px;
+    --accent-text: 24px;
+    --body-text: 16px;
+    --body-lg: 20px;
+    --prod-card-title: 24px;
+
+    /*Text styles mobile*/
+    --header-mobile: 24px;
+    --sub-header-mobile: 18px;
+    --accent-text-mobile: 16px;
+    --body-text-mobile: 16px;
+    --body-lg-mobile: 18px;
+    --prod-card-title-mobile: 22px;
+
 }
 
 /*Body*/
