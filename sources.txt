@@ -1,0 +1,18 @@
+Sources used to solve issues and design concepts. 
+Note:Some sources may not be used, and is saved in case they become useful later.
+Integrate these sources into a section in README.md before delivery.
+-----------------------------------------------------------------------------------
+
+Used sources:
+
+HTML <article> Tag
+https://www.w3schools.com/tags/tag_article.asp
+
+
+-----------------------------------------------------------------------------------
+Unused sources:
+Creating CSS carousels
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels 
+
+How TO - Menu Icon
+https://www.w3schools.com/howto/howto_css_menu_icon.asp
