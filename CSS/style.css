@@ -37,3 +37,33 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
+.headerSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 24px;
+}
+
+/*nav menu btn and icon*/
+.menuBtn {
+display: inline-block;
+background-color: transparent;
+border: none;
+margin: 0 0;
+padding: 5px;
+cursor: pointer;
+}
+
+.menuIcon1, .menuIcon2, .menuIcon3  {
+    width: 20px;
+    height: 2px;
+    background-color: var(--dark-color);
+    margin: 3px 0px;
+}
+
+/*nav */
+nav {
+    display: none;
+}
