@@ -1,14 +1,19 @@
-/*Colours and text global scope*/
+/*
+----------------------------------------
+Colors and text global scope
+----------------------------------------
+*/
+
 :root {
-    /*Colours BTNs*/
+    /*Colors BTNs*/
   --green-hover-color: #008F51; 
   --green-default-color: #28BD6D; 
   --red-hover-color: #A60F00; 
   --red-default-color: #CB1D0B; 
 
-  /*Colours text and interface*/
-   --dark-color: #49484B; 
-   --grey-color: #0B0A08; 
+    /*Colors text and interface*/
+   --grey-color: #49484B; 
+   --dark-color: #0B0A08; 
    --white-color: #FFFFFF; 
    --cream-color: #F7F2DE; 
    --sky-color: #E1EAF0; 
@@ -28,42 +33,81 @@
     --body-text-mobile: 16px;
     --body-lg-mobile: 18px;
     --prod-card-title-mobile: 22px;
-
 }
 
-/*Body*/
+/*
+----------------------------------------
+Body
+----------------------------------------
+*/
 
 body{
     margin: 0px;
     padding: 0px;
 }
 
+/*
+----------------------------------------
+TBD
+----------------------------------------
+*/
+
+
+/*
+----------------------------------------
+HEADER AND NAV DESIGN SECTION 
+----------------------------------------
+*/
+
 .headerSection{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin: 0px 24px;
+    justify-content:space-around; 
+    background-color: #F7F2DE;
+    transition: 0.3s;
 }
 
 /*nav menu btn and icon*/
-.menuBtn {
-display: inline-block;
-background-color: transparent;
-border: none;
-margin: 0 0;
-padding: 5px;
-cursor: pointer;
+
+#navBtn{
+    border: none;
+    background-color: transparent;
+    
 }
 
-.menuIcon1, .menuIcon2, .menuIcon3  {
-    width: 20px;
-    height: 2px;
-    background-color: var(--dark-color);
-    margin: 3px 0px;
+#navIcon{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
 }
 
-/*nav */
-nav {
-    display: none;
+#navIcon:hover{
+    color: var(--dark-color);
 }
+
+.navOverlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 0%;
+    z-index: 1;
+    background-color: var(--green-hover-color);
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+.navOverlayContent{
+
+}
+
+/*
+----------------------------------------
+HERO SECTION 
+----------------------------------------
+*/

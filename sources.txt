@@ -8,6 +8,9 @@ Used sources:
 HTML <article> Tag
 https://www.w3schools.com/tags/tag_article.asp
 
+How TO - Full screen Overlay Navigation
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay
+
 
 -----------------------------------------------------------------------------------
 Unused sources:
@@ -16,3 +19,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels
 
 How TO - Menu Icon
 https://www.w3schools.com/howto/howto_css_menu_icon.asp
+
+The JavaScript Ternary Operator
+https://www.w3schools.com/js/js_if_ternary.asp
+
+Used for the icon in the nav bar
+https://symbl.cc/en/2630/
+https://symbl.cc/en/00D7/
