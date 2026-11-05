@@ -48,14 +48,38 @@ body{
 
 /*
 ----------------------------------------
-TBD
+Global Styling desktop
 ----------------------------------------
 */
+h1{
+    font-size: var(--header);
+}
 
+a {
+    text-decoration: none;   
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
 
 /*
 ----------------------------------------
-HEADER AND NAV DESIGN SECTION 
+Styling mobile
+----------------------------------------
+*/
+
+/*
+----------------------------------------
+HEADER AND NAV SECTION 
 ----------------------------------------
 */
 
@@ -65,17 +89,25 @@ HEADER AND NAV DESIGN SECTION
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-around; 
+    max-height: 72px;
+    justify-content:space-between;
     background-color: #F7F2DE;
     transition: 0.3s;
+    padding: 16px 42px;
+}
+
+.displayCartNr{
+    background-color: var(--green-default-color);
+    padding: 10px 25px;
+    border-radius: 50px;
 }
 
 /*nav menu btn and icon*/
 
-#navBtn{
+#navBtnOpen, #navBtnClose{
     border: none;
     background-color: transparent;
-    
+    cursor: pointer;
 }
 
 #navIcon{
@@ -100,10 +132,31 @@ HEADER AND NAV DESIGN SECTION
     background-color: var(--green-hover-color);
     overflow-x: hidden;
     transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.navHeader{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid var(--dark-color);
+}
+
+.navHeader button{
+    grid-column: 1;
+    justify-self: start;
+}
+
+.navHeader a{
+    grid-column: 2;
+    justify-self: center;
 }
 
 .navOverlayContent{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*

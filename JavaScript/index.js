@@ -11,7 +11,7 @@ navBtnClose.addEventListener("click", navToggleClose)
 Functions that toggle the nav menu from close to open.
 */
 function navToggleOpen() {
-    navMenu.style.width = "30%";
+    navMenu.style.width = "33%";
 
 };
 
