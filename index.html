@@ -12,10 +12,10 @@
     Header
     -->
     <header class="headerSection">
-        <button class="menuBtn">
-            <div class="menuIcon1"></div>
-            <div class="menuIcon2"></div>
-            <div class="menuIcon3"></div>
+
+        <button id="navBtn">
+                <!--Note! Unicode for the icon. HTML=&#9776; JS=\u2630-->
+            <span id="navIcon">&#9776;</span>
         </button>
 
         <a href="/index.html">FRAM</a>
@@ -28,14 +28,14 @@
     <!--
     Navbar
     -->
-    <nav>
+    <nav id="navMenu" class="navOverlay">
 
-        <ul>
+        <ul class="navOverlayContent">
             <li><a href="/HTML/product.html">Products</a></li>
             <li><a href="/HTML/chatbot.html">Chatbot</a></li>
             <li><a href="">Checkout</a></li>
         </ul>
-        
+ 
     </nav>
 
     <!--
@@ -157,6 +157,6 @@
 
     </footer>
 
-    <script src="/JavaScript/index.js"></script>
+    <script src="/JavaScript/index.js" defer></script>
 </body>
 </html>
