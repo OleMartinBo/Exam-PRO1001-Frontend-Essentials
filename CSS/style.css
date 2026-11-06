@@ -110,6 +110,7 @@ h2{
 
 h3 {
     font-size: var(--sub-header);
+    font-weight: 100;
     text-transform: uppercase;
     margin: 0px 0px;
 }
@@ -150,7 +151,12 @@ ul{
 
 li{
     list-style: none;
-    margin-bottom: 16px;
+    margin: 16px;
+}
+
+.linkProd{
+    color: var(--grey-color);
+    text-decoration: none;
 }
 
 /*
@@ -304,6 +310,7 @@ info SECTION
     justify-self: center;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
     min-width: 0;
     max-width: 464px;
     gap: 36px;
@@ -333,3 +340,39 @@ info SECTION
 order SECTION 
 ----------------------------------------
 */
+.orderSection{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--cream-color);
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.orderSection h2{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0px 42px;
+    
+}
+.orderContainer {
+    padding: 32px 0;
+    margin: 0px;
+    border-left: 1px solid var(--dark-color);
+    
+}
+.orderList{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    border-bottom: 1px solid var(--dark-color);
+    margin: 0;
+    padding: 32px 30px 32px 42px ;
+}
+
+.orderContainer li:last-of-type{
+    border-bottom: none;
+}
