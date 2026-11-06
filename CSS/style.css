@@ -34,6 +34,20 @@ Colors and text global scope
     --body-lg-mobile: 18px;
     --prod-card-title-mobile: 22px;
 }
+/*
+----------------------------------------
+Fonts
+----------------------------------------
+*/
+@font-face {
+    font-family:FrankRuhlLibre-Light ;
+    src: url(/Fonts/Frank_Ruhl_Libre/FrankRuhlLibre-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:Arimo-Regular;
+    src: url(/Fonts/Arimo/static/Arimo-Regular.ttf);
+}
 
 /*
 ----------------------------------------
@@ -53,6 +67,8 @@ Global Styling desktop
 */
 h1{
     font-size: var(--header);
+    font-family: FrankRuhlLibre-Light;
+    font-weight: 100
 }
 
 a {
@@ -89,11 +105,14 @@ HEADER AND NAV SECTION
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-height: 72px;
+    height: 72px;
     justify-content:space-between;
     background-color: #F7F2DE;
     transition: 0.3s;
-    padding: 16px 42px;
+    padding: 0px 46px;
+    z-index: 2;
+    margin: 0px;
+    border: 1px solid var(--dark-color);
 }
 
 .displayCartNr{
@@ -128,7 +147,7 @@ HEADER AND NAV SECTION
     left: 0%;
     height: 100%;
     width: 0%;
-    z-index: 1;
+    z-index: 3;
     background-color: var(--green-hover-color);
     overflow-x: hidden;
     transition: 0.2s;
@@ -141,6 +160,8 @@ HEADER AND NAV SECTION
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     border-bottom: 2px solid var(--dark-color);
+    height: 72px;
+    padding: 0px;
 }
 
 .navHeader button{
@@ -164,3 +185,52 @@ HEADER AND NAV SECTION
 HERO SECTION 
 ----------------------------------------
 */
+.heroSection{
+    position: relative;
+    text-align: center;
+}
+
+.heroSection{
+    color: var(--white-color);
+}
+
+.heroHeader {
+    position: absolute;
+    font-size: 200px;
+    font-family: FrankRuhlLibre-Light;
+    font-weight: 100;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 0px;
+}
+
+.verticalline {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 1px;
+    height: 239px;
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+.heroText {
+    position: absolute;
+    font-size: var(--header);
+    font-family:Arimo-Regular;
+    text-transform: uppercase;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    margin-top: 10px;
+}
+
+.heroBackground{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
