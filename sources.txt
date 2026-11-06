@@ -17,6 +17,11 @@ https://www.w3schools.com/cssref/pr_grid-column.php
 CSS grid-column Property
 https://www.w3schools.com/cssref/pr_grid-column.php
 
+CSS Grid Tracks (Rows and Colums)
+https://www.w3schools.com/css/css_grid_tracks.asp
+
+:last-of-type CSS pseudo-class
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:last-of-type
 -----------------------------------------------------------------------------------
 Unused sources:
 Creating CSS carousels

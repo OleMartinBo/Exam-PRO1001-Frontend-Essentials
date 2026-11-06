@@ -36,7 +36,7 @@ Colors and text global scope
 }
 /*
 ----------------------------------------
-Fonts
+Font faces
 ----------------------------------------
 */
 @font-face {
@@ -51,32 +51,97 @@ Fonts
 
 /*
 ----------------------------------------
-Body
+Global Styling desktop
 ----------------------------------------
 */
 
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Arimo-Regular, Arial, Helvetica, sans-serif;
 }
 
-/*
-----------------------------------------
-Global Styling desktop
-----------------------------------------
-*/
-h1{
+.logoNav {
+    font-family: FrankRuhlLibre-Light, 'Times New Roman', Times, serif;
+    font-size: var(--accent-text);
+    font-weight: 100;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.navIcon{
+    display: inline-block;
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.navIcon:hover{
+    color: var(--grey-color);
+}
+
+.navLinks {
     font-size: var(--header);
-    font-family: FrankRuhlLibre-Light;
-    font-weight: 100
+    font-family: Arimo-Regular, Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;   
-}
-
-a:hover {
+.navLinks:hover {
     text-decoration: underline;
+}
+
+h1{
+    font-size: 200px;
+    font-family: FrankRuhlLibre-Light, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 0px 0px;
+}
+
+h2{
+    font-size: var(--header);
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0px 0px;
+}
+
+h3 {
+    font-size: var(--sub-header);
+    text-transform: uppercase;
+    margin: 0px 0px;
+}
+
+.heroText {
+    font-size: var(--header);
+    font-family:Arimo-Regular;
+    text-transform: uppercase;
+}
+
+.infoText{
+    font-size: var(--body-lg);
+    margin: 0px 0px;
+    
+}
+
+.linkBtn{
+    font-size: var(--body-text);
+    font-family: Arimo-Regular;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: var(--red-default-color);
+    color: var(--white-color);
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkBtn:hover{
+    background-color: var(--red-hover-color);
+    
 }
 
 ul{
@@ -85,6 +150,7 @@ ul{
 
 li{
     list-style: none;
+    margin-bottom: 16px;
 }
 
 /*
@@ -95,10 +161,9 @@ Styling mobile
 
 /*
 ----------------------------------------
-HEADER AND NAV SECTION 
+HEADER SECTION 
 ----------------------------------------
 */
-
 .headerSection{
     position: sticky;
     top: 0;
@@ -107,7 +172,7 @@ HEADER AND NAV SECTION
     align-items: center;
     height: 72px;
     justify-content:space-between;
-    background-color: #F7F2DE;
+    background-color: var(--cream-color);
     transition: 0.3s;
     padding: 0px 46px;
     z-index: 2;
@@ -121,24 +186,20 @@ HEADER AND NAV SECTION
     border-radius: 50px;
 }
 
-/*nav menu btn and icon*/
+.displayCartNr:hover{
+    background-color: var(--green-hover-color);
+}
+
+/*
+----------------------------------------
+NAV SECTION 
+----------------------------------------
+*/
 
 #navBtnOpen, #navBtnClose{
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-#navIcon{
-    display: inline-block;
-    text-align: center;
-    font-size: 30px;
-    line-height: 1;
-    cursor: pointer;
-}
-
-#navIcon:hover{
-    color: var(--dark-color);
 }
 
 .navOverlay{
@@ -161,7 +222,7 @@ HEADER AND NAV SECTION
     align-items: center;
     border-bottom: 2px solid var(--dark-color);
     height: 72px;
-    padding: 0px;
+    padding: 0px 32px;
 }
 
 .navHeader button{
@@ -178,6 +239,11 @@ HEADER AND NAV SECTION
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    padding: 64px 0px;
+}
+.navOverlayContent li:nth-last-of-type(1){
+    margin-top: auto;
 }
 
 /*
@@ -187,50 +253,83 @@ HERO SECTION
 */
 .heroSection{
     position: relative;
-    text-align: center;
-}
-
-.heroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white-color);
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-.heroHeader {
-    position: absolute;
-    font-size: 200px;
-    font-family: FrankRuhlLibre-Light;
-    font-weight: 100;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    margin-top: 0px;
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    max-width: 509px;
+    z-index: 1;
 }
 
-.verticalline {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+.verticalLine {
     width: 1px;
     height: 239px;
     background-color: var(--white-color);
-    margin-top: 10px;
-}
-
-.heroText {
-    position: absolute;
-    font-size: var(--header);
-    font-family:Arimo-Regular;
-    text-transform: uppercase;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    margin-top: 10px;
 }
 
 .heroBackground{
+    position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
-    
 }
+
+/*
+----------------------------------------
+info SECTION 
+----------------------------------------
+*/
+
+.infoSection {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+    max-width: 464px;
+    gap: 36px;
+    box-sizing: border-box;
+    padding: 64px 28px;
+}
+
+.dividerLine{
+    width: 1px;
+    height: 100%;
+    background-color: var(--dark-color);
+}
+
+.infoImg{
+    aspect-ratio: 3/2;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.infoImg, .linkBtn{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*
+----------------------------------------
+order SECTION 
+----------------------------------------
+*/

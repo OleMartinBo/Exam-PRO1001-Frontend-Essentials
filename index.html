@@ -18,7 +18,7 @@
             <span class="navIcon">&#9776;</span>
         </button>
 
-        <h1>FRAM</h1>
+         <a  class="logoNav" href="/index.html">FRAM</a>
         
         <!--Output is used to display the result of an calculation: Add To Basket-->
         <output class="displayCartNr">0</output>
@@ -36,16 +36,16 @@
                 <span class="navIcon">X</span>
             </button>
 
-            <a href="/index.html">FRAM</a>
+            <a class="logoNav" href="/index.html">FRAM</a>
         </div>
 
 
         <ul class="navOverlayContent">
-            <li><a href="/HTML/product.html">Products</a></li>
-            <li><a href="/HTML/chatbot.html">Chat</a></li>
-            <li><a href="">Checkout</a></li>
+            <li><a class="navLinks" href="/HTML/product.html">Products</a></li>
+            <li><a class="navLinks" href="/HTML/chatbot.html">Chat</a></li>
+            <li><a class="navLinks" href="">Checkout</a></li>
         </ul>
- 
+        
     </nav>
 
     <!--
@@ -55,9 +55,12 @@
 
         <!--First section with image, company name, and slogan-->
         <section class="heroSection">
-            <h2 class="heroHeader">FRAM</h2>
-            <div class="verticalline"></div>
-            <p class="heroText">home delivery from your local farms</p>
+            <div class="heroContent">
+                <h1>FRAM</h1>
+                <div class="verticalLine"></div>
+                <p class="heroText">home delivery from your local farms</p>
+            </div>
+
             <img class="heroBackground" src="/Images/hero.png" alt="landscape image of mountains">
         </section>
 
@@ -65,24 +68,26 @@
         <section class="infoSection">
 
              <!--Article is used as these are two self contained containers, like a info post on the page -->
-            <article>
+            <article class="infoBox">
                 <h2>shop our seasonal selection</h2>
-                <p>Updated every week</p>
-                  <!-- 
-                <img src="/Images/vegetables.png" alt="Image of various vegetables">
-                -->
-                <p>New produce is added continuously as time goes by and the season change.</p>
-                <a href="/HTML/product.html">Browse our selection</a>
+                <p class="infoText">Updated every week</p>
+                
+                <img class="infoImg" src="/Images/vegetables.png" alt="Image of various vegetables">
+                
+                <p class="infoText">New produce is added continuously as time goes by and the season change.</p>
+                <a class="linkBtn" href="/HTML/product.html">Browse our selection</a>
             </article>
 
-            <article>
+            <div class="dividerLine"></div>
+
+            <article class="infoBox">
                 <h2>ask us about anything</h2>
-                <p>All your questions answered</p>
-                <!-- 
-                <img src="/Images/field.png" alt="Image of a man pointing his finger out towards the filed where produce is grown">
-                -->
-                <p>New produce is added continuously as time goes by and the season change.</p>
-                <a href="/HTML/product.html">Browse our selection</a>
+                <p class="infoText">All your questions answered</p>
+                
+                <img class="infoImg" src="/Images/field.png" alt="Image of a man pointing his finger out towards the filed where produce is grown">
+               
+                <p class="infoText">New produce is added continuously as time goes by and the season change.</p>
+                <a class="linkBtn" href="/HTML/product.html">Browse our selection</a>
             </article>
 
         </section>
