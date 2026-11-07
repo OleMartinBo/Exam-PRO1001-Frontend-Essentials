@@ -30,6 +30,21 @@ async function loadJSON(file) {
         }
         const products = await response.json();
         console.log(products);
+
+        const prodContainer = document.getElementById("prodContainer")
+        console.log(prodContainer);
+
+        products.forEach(product => {
+            const cardItem = document.createElement("li");
+            cardItem.classList.add("cardItem")
+            cardItem.innerHTML=`
+            <div>Test</div>
+            `
+            prodContainer.appendChild(cardItem);
+   
+        });
+
+
     }   
     catch(err){
         console.log(err)
