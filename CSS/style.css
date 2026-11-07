@@ -226,7 +226,7 @@ NAV SECTION
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    border-bottom: 2px solid var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
     height: 72px;
     padding: 0px 32px;
 }
@@ -381,6 +381,71 @@ order SECTION
 produce SECTION 
 ----------------------------------------
 */
+
+.produceSection{
+    padding: 64px 42px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap:28px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.cardItem{
+    flex-shrink: 0;
+    padding: 0px;
+    margin: 0px;
+    scroll-snap-align: center;
+}
+
+.cardPreview{
+    position: relative;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardItem img{
+    aspect-ratio: 1/1;
+    border-radius: 16px;
+    max-width: 433px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardBtn{
+    padding: 10px 16px;
+    border-radius: 44px;
+    box-sizing: border-box;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border: none;
+    font-family: Arimo-Regular, Arial, Helvetica, sans-serif;
+    font-size: var(--body-text);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.cardBtn:hover{
+    background-color: var(--red-hover-color);
+}
+
+.cardItem button{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1;
+}
 
 /*
 ----------------------------------------

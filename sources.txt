@@ -22,6 +22,20 @@ https://www.w3schools.com/css/css_grid_tracks.asp
 
 :last-of-type CSS pseudo-class
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:last-of-type
+
+CSS The overflow Property
+https://www.w3schools.com/css/css_overflow.asp
+
+CSS scroll-snap-type Property
+https://www.w3schools.com/cssref/css_pr_scroll-snap-align.php
+
+CSS scroll-snap-align Property
+https://www.w3schools.com/cssref/css_pr_scroll-snap-type.php
+
+
+
+
+
 -----------------------------------------------------------------------------------
 Unused sources:
 Creating CSS carousels
