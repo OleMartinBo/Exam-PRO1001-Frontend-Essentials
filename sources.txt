@@ -32,13 +32,22 @@ https://www.w3schools.com/cssref/css_pr_scroll-snap-align.php
 CSS scroll-snap-align Property
 https://www.w3schools.com/cssref/css_pr_scroll-snap-type.php
 
-
-
 JavaScript JSON Syntax
 https://www.w3schools.com/js/js_json_syntax.asp
 
 JavaScript Loading JSON
 https://www.w3schools.com/js/js_json_server.asp
+
+JavaScript Arrow Functions
+https://www.w3schools.com/js/js_arrow_function.asp
+
+JavaScript Array forEach()
+https://www.w3schools.com/jsref/jsref_foreach.asp
+
+HTML DOM Element classList
+https://www.w3schools.com/jsref/prop_element_classlist.asp
+
+
 -----------------------------------------------------------------------------------
 Unused sources:
 Creating CSS carousels

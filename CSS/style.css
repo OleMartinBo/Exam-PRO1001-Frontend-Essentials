@@ -384,6 +384,7 @@ produce SECTION
 
 .produceSection{
     padding: 64px 42px;
+    
 }
 
 .cardContainer{
@@ -395,6 +396,7 @@ produce SECTION
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    padding: 46px 0px;
 }
 
 .cardItem{
@@ -418,9 +420,8 @@ produce SECTION
 .cardItem img{
     aspect-ratio: 1/1;
     border-radius: 16px;
-    max-width: 433px;
-    width: 100%;
-    object-fit: cover;
+    width: 433px;
+    object-fit:cover;
 }
 
 .cardBtn{

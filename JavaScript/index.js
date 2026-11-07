@@ -37,8 +37,19 @@ async function loadJSON(file) {
         products.forEach(product => {
             const cardItem = document.createElement("li");
             cardItem.classList.add("cardItem")
-            cardItem.innerHTML=`
-            <div>Test</div>
+            cardItem.innerHTML=
+            `
+                <div class="cardPreview">
+                    <img src="${product.prodImg}" alt="Oats">
+                    <button class="cardBtn">Add to basket <span>&#8593;</span></button>
+                </div>
+
+                <div class="cardInfo">
+                    <h3>${product.prod_title}</h3>
+                    <p>${product.prod_price} Kr / kg</p>
+                </div>
+
+                <p class="cardAmount">${product.prod_amount} kg</p>
             `
             prodContainer.appendChild(cardItem);
    
