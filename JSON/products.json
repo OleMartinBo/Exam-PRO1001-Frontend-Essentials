@@ -1,0 +1,23 @@
+[
+    {   
+        "prod_id": 1,
+        "prod_title": "Oats",
+        "prod_price": 48,
+        "prod_amount": 1,
+        "prodImg":"/Images/vegetables.png"
+    },
+    {
+        "prod_id": 2,
+        "prod_title": "Red Onions",
+        "prod_price": 36,
+        "prod_amount": 0.5,
+        "prodImg":"/Images/vegetables.png"
+    },
+    {
+        "prod_id": 3,
+        "prod_title": "Garlic",
+        "prod_price": 48,
+        "prod_amount": 0.2,
+        "prodImg":"/Images/vegetables.png"
+    }    
+]

@@ -34,8 +34,8 @@ https://www.w3schools.com/cssref/css_pr_scroll-snap-type.php
 
 
 
-
-
+JavaScript JSON Syntax
+https://www.w3schools.com/js/js_json_syntax.asp
 -----------------------------------------------------------------------------------
 Unused sources:
 Creating CSS carousels
