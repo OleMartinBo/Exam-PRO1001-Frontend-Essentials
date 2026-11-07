@@ -18,3 +18,20 @@ function navToggleOpen() {
 function navToggleClose() {
     navMenu.style.width = "0%";
 };
+
+
+
+
+async function loadJSON(file) {
+  const response = await fetch(file);
+
+
+  const products = await response.json();
+
+  console.log(products)
+
+}
+
+
+loadJSON("JSON/products.json");
+
