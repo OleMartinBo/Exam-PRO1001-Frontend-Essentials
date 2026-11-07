@@ -23,15 +23,18 @@ function navToggleClose() {
 
 
 async function loadJSON(file) {
-  const response = await fetch(file);
-
-
-  const products = await response.json();
-
-  console.log(products)
-
+    try {
+        const response = await fetch(file);
+        if(!response.ok){
+            throw new Error ("HTTP Error " + response.status)
+        }
+        const products = await response.json();
+        console.log(products);
+    }   
+    catch(err){
+        console.log(err)
+    }
 }
-
 
 loadJSON("JSON/products.json");
 
